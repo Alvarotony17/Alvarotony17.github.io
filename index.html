@@ -18,6 +18,9 @@
       background: linear-gradient(to bottom right, rgba(0, 116, 217, 0.8), rgba(0, 191, 255, 0.8)), url('your-image-url-here.jpg') center center / cover no-repeat;
       height: 100%;
       color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .header-content {
       text-align: center;
@@ -51,6 +54,19 @@
     .footer p {
       font-size: 0.9em;
     }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 1em;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2em;
+    }
   </style>
 </head>
 <body>
@@ -60,14 +76,32 @@
     Mesointerlink
   </div>
   <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">35 days left</p>
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+    <div class="header-content">
+      <h1>Mesointerlink</h1>
+      <p>Building the future of technology and innovation</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </div>
 </div>
+
+<div class="content" id="about">
+  <h2>About Us</h2>
+  <p>Mesointerlink is dedicated to innovating and creating new technologies to shape the future. Our mission is to bring groundbreaking solutions to life.</p>
+</div>
+
+<div class="content" id="contact">
+  <h2>Contact</h2>
+  <p>Get in touch with us to learn more about our work or to collaborate on new ventures.</p>
+</div>
+
+<footer class="footer">
+  <p>&copy; 2024 Mesointerlink. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
