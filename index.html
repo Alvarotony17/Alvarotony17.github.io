@@ -1,37 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="Homepage">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mesointerlink</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta property="og:url" content="http://yourwebsite.com/">
+    <meta property="og:site_name" content="Your Site Name">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
+    <title>Your Site Name</title>
+    <link rel="canonical" href="http://yourwebsite.com/">
+    <link rel="apple-touch-icon" sizes="180x180" href="path/to/your/favicon.png">
+    <link rel="icon" type="image/png" href="path/to/your/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="path/to/your/favicon-16x16.png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Merriweather:300,400,700" rel="stylesheet">
+    <style>
+        :root {
+            --color-gray: #dddddd;
+            --color-dark-gray: #333333;
+            --font-1: "Google Sans Display";
+        }
+        body {
+            font-family: var(--font-1);
+            background-color: var(--color-gray);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header, footer {
+            background-color: var(--color-dark-gray);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .main-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .main-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .main-content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: var(--color-dark-gray);
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--color-dark-gray);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #555555;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <img src="mesointerlink_cube_transparent.png" alt="Mesointerlink Logo">
-      <h1>Mesointerlink</h1>
-      <p>Building the future of technology and innovation</p>
+    <header>
+        <h1>Your Site Name</h1>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <h1>Welcome to Your Site</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod, nisi vel consectetur euismod, nisl nunc ultrices nunc, a bibendum ipsum nibh ut nisl. Proin vehicula, odio sit amet faucibus elementum, magna lorem pharetra leo, at condimentum sem justo vel orci. Cras luctus turpis in massa fermentum, a interdum risus facilisis.</p>
+            <a href="#" class="button">Learn More</a>
+        </div>
     </div>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section id="about">
-      <h2>About Us</h2>
-      <p>Mesointerlink is dedicated to innovating and creating new technologies to shape the future. Our mission is to bring groundbreaking solutions to life.</p>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Get in touch with us to learn more about our work or to collaborate on new ventures.</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Mesointerlink. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>&copy; 2024 Your Site Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
